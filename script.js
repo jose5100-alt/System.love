@@ -5,7 +5,7 @@ const messages = [
     "",
     "✓ Sistema iniciado",
     "✓ Conexión establecida",
-    "✓ Persona especial encontrada ❤️"
+    "✓ Persona especial encontrada ❣️"
 ];
 
 const terminal = document.getElementById("terminal-text");
@@ -62,7 +62,7 @@ function enterSystem() {
 
     document.querySelector(".content").innerHTML = `
         <div class="heart-screen">
-            <h1>❤️ ACCESO CONCEDIDO ❤️</h1>
+            <h1>❣️ACCESO CONCEDIDO❣️</h1>
 
             <p class="typing" id="loveText"></p>
 
@@ -73,7 +73,7 @@ function enterSystem() {
     `;
 
     const text =
-        "No era un virus... solo era una excusa para decirte que eres una persona muy especial para mí. ❤️";
+        "No era un virus... solo era una excusa para decirte que eres una persona muy especial para mí. 🥰";
 
     let i = 0;
     const typing = document.getElementById("loveText");
@@ -93,14 +93,14 @@ function showFinalMessage() {
 
     document.querySelector(".content").innerHTML = `
         <div class="heart-screen">
-            <h1>💖 SYSTEM COMPLETED 💖</h1>
+            <h1>❣️ SYSTEM COMPLETED ❣️</h1>
 
             <p>
                 Gracias por entrar a mi sistema.
                 Ahora ya sabes cuál era el secreto...
             </p>
 
-            <h2 class="love">Te quiero muchísimo. 🌹</h2>
+            <h2 class="love">Te quiero muchísimo. ❣️🌹</h2>
         </div>
     `;
 
@@ -114,7 +114,7 @@ function createHearts() {
     setInterval(() => {
 
         const heart = document.createElement("div");
-        heart.innerHTML = "❤️";
+        heart.innerHTML = "❣️";
         heart.className = "heart";
 
         heart.style.left = Math.random() * window.innerWidth + "px";
